@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/html.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/esilo.css">
+  <!--<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
+    <title>IMPACTA</title>
+</head>
+<body>
+    <!--Menu principal desktop-->
+    <header class="cabecalho">
+        <a href="#">IMPACTA</a>
+        <nav class="">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROJETO</a></li>
+            <li><a href="#">CLIENTES</a></li>
+            <li><a href="#">CONTATOS</a></li>
+        </nav>
+    </header>
+    <hr>
+     <!--Mobile-->
+    <div class="menu-mobile">
+        <button class="btn-menu" abre><i class="fa fa-lg fa-bars"></i></button>
+        <div class="menu-item">
+            <nav class="menu">
+                <hr style="margin-bottom: 10px;">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJETO</a></li>
+                <li><a href="#">CLIENTES</a></li>
+                <li><a href="#">CONTATOS</a></li>
+            </nav>
+        </div>
+    </div>
+    <!-- Menu Mobile fim-->
+    <!--Banner-->
+    <section class="banner">
+        <h1>IMPACTA</h1>
+        <h3>uma empresa feita pensando em você</h3>
+        <a href="#" class="btn">Conheça mais</a>
+    </section>
+    <hr>
+    <!--Sobre-->
+    <section id="sobre-mim">
+        <h2>Sobre mim </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum enim sit amet massa tempor tempor. Maecenas cursus posuere dolor, at laoreet leo sodales non. Quisque id ante a augue rutrum sagittis. Curabitur molestie enim diam, nec ultrices urna feugiat ut. Vestibulum ut lorem nec urna semper imperdiet iaculis sit amet lectus.</p>
+    </section>
+    <hr>
+    <!--O que  posso fazer-->
+    <main class="possofazer">
+        <section class="grid">
+            <article class="conteiner-item">
+                <h1>Criação de software</h1>
+                <img src="img/software.png" alt="">
+                <p>Criação de Sotwares com o que tem de mais novo</p>
+            </article>
+            
+            <article class="conteiner-item">
+                <h1>HTML5, CSS3, php, JS</h1>
+                <img src="img/html.jpeg" alt="">
+                <p>HTML5, CSS3, php, JS</p>
+            </article>
+            
+            <article class="conteiner-item">
+                <h1>O que posso fazer?</h1>
+                <img src="img/fazer.jpeg" alt="">
+                <p>Sites e sistemas front-end em html, css, js</p>
+            </article>
+
+        </section>
+    </main>
+    <hr>
+
+    <!--Rodapé-->
+
+    <footer >
+        <h2>Mande-me uma mensagem</h2>
+        <p>Caso queira marcar horario, dúvidas, sugestões ou critica</p>
+        <img src="img/html.jpeg" alt="empresa">
+        <!--Formulario contato-->
+        <form action="#" method="post">
+          <input type="text" name="nome" id="" placeholder="Seu nome">
+          <input type="email" name="email" placeholder="Seu email" id="">
+          <textarea name="msg" placeholder="Sua mensagem" id="" cols="30" rows="30"></textarea>
+          <input type="submit" value="Enviar" id="enviar" name="enviar">
+          <hr>
+        </form>
+        <!--Links redes sociais-->
+        <div class="contatoSocial"> 
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </div>
+       
+        <p>Desenvolvido por <span class="detalhes">Willamy Braga</span></p>
+      </footer>
+      
+    <script>
+       document.querySelectorAll('[abre]').forEach(folder =>{
+           folder.onclick= function(e){
+               const ul = folder.nextElementSibling
+               const menuAbre = ul.style.display
+               ul.style.display = menuAbre === 'none' ? 'block' : 'none'
+           }
+       })
+    </script>
+
+<script src="js/font-awesome.min.js"></script>
+
+</body>
+</html>
